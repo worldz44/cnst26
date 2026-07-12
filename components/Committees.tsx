@@ -1,6 +1,6 @@
 import {
   honoraryPresidents,
-  conferenceChairman,
+  conferenceChairmen,
   scientificCommittee,
   organizingCommittee,
 } from "@/lib/conference-data";
@@ -27,8 +27,10 @@ export default function Committees() {
             <ChairCard key={p.name} name={p.name} role={p.role} />
           ))}
         </div>
-        <div className="mt-4">
-          <ChairCard name={conferenceChairman.name} role={`Conference Chairman · ${conferenceChairman.role}`} />
+        <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          {conferenceChairmen.map((c) => (
+            <ChairCard key={c.name} name={c.name} role={`Conference Chairman · ${c.role}`} />
+          ))}
         </div>
 
         <div className="mt-14 grid gap-10 lg:grid-cols-2">
