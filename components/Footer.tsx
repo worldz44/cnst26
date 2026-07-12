@@ -24,6 +24,7 @@ export default function Footer() {
         <div className="mt-8 flex flex-col gap-2 border-t border-ink-700 pt-6 text-xs text-ink-400 sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} {conference.shortName}. All rights reserved.</p>
           <p>Organized by the Faculty of Science &amp; Technology, University of Khemis Miliana.</p>
+          <p>Developed by ROUABAH Slim.</p>
         </div>
       </div>
     </footer>
