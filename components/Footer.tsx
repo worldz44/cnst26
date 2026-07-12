@@ -8,6 +8,7 @@ export default function Footer() {
           <div>
             <p className="font-display text-sm font-semibold text-ink-50">{conference.shortName}</p>
             <p className="mt-2 text-sm leading-relaxed text-ink-300">{conference.institution}</p>
+            <p className="mt-2 text-sm leading-relaxed text-ink-300">Developed </p>
           </div>
           <div>
             <p className="font-mono text-xs uppercase tracking-wider text-ink-400">Conference</p>
