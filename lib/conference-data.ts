@@ -95,8 +95,8 @@ export const honoraryPresidents = [
 ];
 
 export const conferenceChairman = {
-  {name: "Dr. KACI Meziane", role: "University of Khemis Miliana"},
-  {name: "Dr. ROUABAH Slim", role: "University of Khemis Miliana"},
+  name: "Dr. KACI Meziane", role: "University of Khemis Miliana",
+  name: "Dr. ROUABAH Slim", role: "University of Khemis Miliana",
 };
 
 export const scientificCommittee = {
