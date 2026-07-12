@@ -132,7 +132,7 @@ export const scientificCommittee = {
     { institution: "Bejaia University", members: ["Prof. BENDAHMANE Boukhalfa"] },
     { institution: "Setif University", members: ["Prof. NOURI Hamou"] },
     {
-      institution: "Ghilzane University",
+      institution: "Relizane University",
       members: [
         "Dr. AIT SAID Hakim", "Pr. YSSAAD Benyssaad", "Pr. RAHLI Mostefa",
         "Pr. MELIANI Bouziane", "Dr. AISSOU Massinissa", "Dr. MOSTEFA TOUNSI Mahmoud",
