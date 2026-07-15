@@ -1,4 +1,4 @@
-import { conference, contact } from "./conference-data";
+import { conference, contact, trackShortByTitle } from "./conference-data";
 import type { SubmissionInput } from "./submission-schema";
 
 const brandBar = `
@@ -59,7 +59,8 @@ function escapeHtml(value: string) {
 
 /** Email sent to the conference inbox with the full submission + PDF attached. */
 export function buildOrganizerEmail(data: SubmissionInput, referenceNumber: string, submittedAt: string) {
-  const subject = `[${conference.shortName} Submission] ${data.title} — ${referenceNumber}`;
+  const trackTag = trackShortByTitle[data.track] || data.track;
+  const subject = `[${trackTag}] ${data.title} — ${referenceNumber}`;
   const html = wrapper(`
     <p style="margin:0 0 16px;color:#0B1120;font:600 16px/1.4 Arial,sans-serif;">New paper submission received</p>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
