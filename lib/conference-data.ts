@@ -82,6 +82,13 @@ export const tracks: Track[] = [
   },
 ];
 
+/** Maps a full track title (as stored on a submission) to its compact
+ *  label, e.g. "Robotics & Automation" -> "Robotics". Used to tag email
+ *  subjects so Gmail filters can auto-label incoming submissions by track. */
+export const trackShortByTitle: Record<string, string> = Object.fromEntries(
+  tracks.map((t) => [t.title, t.short])
+);
+
 export const importantDates = [
   { label: "Paper submission deadline", value: "To be announced" },
   { label: "Notification of acceptance", value: "To be announced" },
@@ -94,10 +101,10 @@ export const honoraryPresidents = [
   { name: "Dr. BENZAID Djelloul", role: "Dean, Faculty of Science & Technology" },
 ];
 
-export const conferenceChairmen = [
-  { name: "Dr. KACI Meziane", role: "University of Khemis Miliana" },
-  { name: "Dr. ROUABAH Slim", role: "University of Khemis Miliana" },
-];
+export const conferenceChairman = {
+  name: "Dr. Kaci Meziane",
+  role: "University of Khemis Miliana",
+};
 
 export const scientificCommittee = {
   chairmen: [
@@ -132,7 +139,7 @@ export const scientificCommittee = {
     { institution: "Bejaia University", members: ["Prof. BENDAHMANE Boukhalfa"] },
     { institution: "Setif University", members: ["Prof. NOURI Hamou"] },
     {
-      institution: "Relizane University",
+      institution: "Ghilzane University",
       members: [
         "Dr. AIT SAID Hakim", "Pr. YSSAAD Benyssaad", "Pr. RAHLI Mostefa",
         "Pr. MELIANI Bouziane", "Dr. AISSOU Massinissa", "Dr. MOSTEFA TOUNSI Mahmoud",
