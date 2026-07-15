@@ -118,13 +118,6 @@ export async function POST(req: NextRequest) {
       to: inbox,
       subject: organizerEmail.subject,
       html: organizerEmail.html,
-      // Custom header carrying the raw track name. Gmail filters match on the
-      // subject tag (see README → "Auto-labeling submissions by track"), but
-      // this header is also here in case you later automate labeling further
-      // with the Gmail API or Apps Script.
-      headers: {
-        "X-CNST26-Track": data.track,
-      },
       attachments: [
         {
           filename: uniqueFileName,
