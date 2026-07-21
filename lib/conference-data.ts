@@ -13,8 +13,7 @@ export const conference = {
   institution: "Faculty of Science & Technology, University of Khemis Miliana (Djilali Bounaama University of Khemis Miliana), Algeria",
   chair: "Dr. Kaci Meziane",
   description:
-    "CNST'26 brings together researchers, academics, engineers and graduate students from diverse scientific and technical fields to share original research, innovative ideas and practical experience — a multidisciplinary platform for collaboration, knowledge exchange and applied-research advancement across engineering and science.
-    website: "https://cnst26.org"",
+    "CNST'26 brings together researchers, academics, engineers and graduate students from diverse scientific and technical fields to share original research, innovative ideas and practical experience — a multidisciplinary platform for collaboration, knowledge exchange and applied-research advancement across engineering and science.",
   objectives: [
     "Provide a multidisciplinary platform for collaboration and knowledge exchange across engineering and science.",
     "Showcase original research, innovative ideas and practical experience from researchers, academics, engineers and graduate students.",
